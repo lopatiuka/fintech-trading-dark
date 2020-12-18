@@ -1418,6 +1418,10 @@ details[open] summary .round-button {
         font-size: 50px;
     }
 
+    .footer {
+        background-position: center bottom;
+    }
+
     .footer .rights {
         width: 1056px;
     }
