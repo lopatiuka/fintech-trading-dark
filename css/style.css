@@ -145,6 +145,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     background-image: url("../images/bg\ home\ dark.png");
+    background-size: 104%;
     background-repeat: no-repeat;
     background-position: center 103%;
 }
@@ -740,7 +741,7 @@ input::-webkit-input-placeholder {
     background: #4C4643;
     background-image: url("../images/bg\ stl\ dark.png");
     background-repeat: no-repeat;
-    background-position: center 114%;
+    background-position: center 109%;
     z-index: 2;
 }
 
@@ -889,7 +890,7 @@ input::-webkit-input-placeholder {
 .stock-leaders .container .stock-leaders-bottom {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     background: linear-gradient(94.77deg, #102F9B -10.79%, #481560 47.75%, #9A3A03 111.39%);
     width: 100%;
     margin-top: -5px;
@@ -898,14 +899,14 @@ input::-webkit-input-placeholder {
 .stock-leaders .container .stock-leaders-bottom .bottom-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 1535px;
 }
 
 .stock-leaders .container .stock-leaders-bottom .conclusion {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -1128,6 +1129,7 @@ details[open] summary .round-button {
     background-color: #1E1A19;
     background-image: url("../images/bg\ footer\ dark.png");
     background-repeat: no-repeat;
+    background-size: 104%;
     background-position: center 103%;
     display: flex;
     flex-direction: column;
@@ -1298,7 +1300,7 @@ details[open] summary .round-button {
     color: white;
 }
 
-@media ( min-width: 2601px ) and ( max-width: 3660px ){
+@media ( min-width: 2601px ){
     body {
         overflow-x: hidden;
     }
@@ -1309,6 +1311,10 @@ details[open] summary .round-button {
 
     header .container .main-content .navigation a {
         font-size: 20px;
+    }
+
+    .intro .container {
+        background-position: center bottom;
     }
 
     .intro .container .content .video-container {
@@ -1353,6 +1359,11 @@ details[open] summary .round-button {
         height: 20px;
     }
 
+
+    .intro .container .content .form-container form .checkboxes .custom-checkbox p {
+        width: 538px;
+    }
+
     .intro .container .content .form-container form .checkboxes label span {
         font-size: 25px;
         line-height: 30px;
@@ -1360,8 +1371,8 @@ details[open] summary .round-button {
 
     .intro .ribbon {
         display: flex;
-        justify-content: space-between;
-        width: 1920px;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .about .container .about-intro .intro-paragraph {
@@ -1380,30 +1391,9 @@ details[open] summary .round-button {
         width: 587px;
     }
 
-    .how-works .container .steps .step-item {
-        width: 740px;
-    }
-
-    .how-works .container .steps .step-item .steps-item-description {
-        font-size: 30px;
-    }
-
-    .how-works .container .how-works-bottom {
-        margin-top: 100px;
-    }
-
-    .how-works .container .how-works-bottom .start-now-link {
-        font-size: 25px;        
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(1) {
-        width: 564.42px;
-        height: 519.02px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(3) {
-        width: 781.65px;
-        height: 668.73px;
+    .stock-leaders .container .stock-leaders-top {
+        background-size: 104%;
+        background-position: center bottom;
     }
 
     .faq .container .answers details {
@@ -1454,6 +1444,10 @@ details[open] summary .round-button {
         font-size: 20px;
     }
 
+    .intro .container {
+        background-position: center 108%;
+    }
+
     .intro .container .content .video-container {
         width: 1323px;
         height: auto;
@@ -1462,8 +1456,8 @@ details[open] summary .round-button {
 
     .intro .ribbon {
         display: flex;
-        justify-content: space-between;
-        width: 1920px;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .about .container .about-intro .intro-paragraph {
@@ -1482,27 +1476,9 @@ details[open] summary .round-button {
         width: 587px;
     }
 
-    .how-works .container .steps .step-item {
-        width: 640px;
-    }
-
-    .how-works .container .how-works-bottom {
-        margin-top: 100px;
-    }
-
-    .how-works .container .how-works-bottom .start-now-link {
-        font-size: 25px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(1) {
-        width: 564.42px;
-        height: 519.02px;
-    }
-
-    .how-works .container .how-works-bottom img:nth-child(3) {
-        width: 781.65px;
-        height: 668.73px;
-        z-index: -1;
+    .stock-leaders .container .stock-leaders-top {
+        background-position: center 149%;
+        background-size: 104%;
     }
 
     .faq .container .answers details {
@@ -3158,7 +3134,6 @@ details[open] summary .round-button {
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item {
         width: 720px;
         border-radius: 100px;
-
     }
 
     .stock-leaders .container .stock-leaders-top .stock-leaders-header h2 {
@@ -3184,7 +3159,7 @@ details[open] summary .round-button {
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .value {
         font-size: 40px;
         line-height: 150%;
-        width: 415px;
+        width: 500px;
     }
 
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .details {
