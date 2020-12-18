@@ -735,7 +735,7 @@ input::-webkit-input-placeholder {
 .stock-leaders .container .stock-leaders-top {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
     background: #4C4643;
     background-image: url("../images/bg\ stl\ dark.png");
@@ -747,13 +747,14 @@ input::-webkit-input-placeholder {
 .stock-leaders .container .stock-leaders-top-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 1535px;
 }
 
 .stock-leaders .container .stock-leaders-top .stock-leaders-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 798px;
 }
 
@@ -763,7 +764,7 @@ input::-webkit-input-placeholder {
     line-height: 150%;
     color: #F4F4F4;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .stock-leaders .container .stock-leaders-top .stock-leaders-header h3 {
@@ -772,11 +773,13 @@ input::-webkit-input-placeholder {
     line-height: 150%;
     color: #F4F4F4;
     margin-top: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .stock-leaders .container .stock-leaders-top .stock-leaders-items {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 100px;
     overflow-x: auto;
@@ -1633,10 +1636,6 @@ details[open] summary .round-button {
 }
 
 @media ( max-width: 1480px ) {
-    .about .container .about-items .item .inner-item .item-header {
-        margin: 0;
-    }
-
     .stock-leaders .container .stock-leaders-top-container {
         width: 100%;
     }
@@ -1929,6 +1928,14 @@ details[open] summary .round-button {
 
     .stock-leaders .container .stock-leaders-top-container {
         max-width: 900px;
+    }
+
+    .stock-leaders .container .stock-leaders-top .stock-leaders-items .item {
+        width: 385px;
+    }
+
+    .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .details {
+        align-self: initial;
     }
 
     .stock-leaders .container .stock-leaders-bottom .lets-go {
@@ -3148,13 +3155,10 @@ details[open] summary .round-button {
         max-width: 100%;
     }
 
-    .stock-leaders .container .stock-leaders-top .stock-leaders-items {
-        margin-left: 90px;
-    }
-
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item {
-        min-width: 475px;
-        border-radius: 70px;
+        width: 720px;
+        border-radius: 100px;
+
     }
 
     .stock-leaders .container .stock-leaders-top .stock-leaders-header h2 {
@@ -3167,13 +3171,20 @@ details[open] summary .round-button {
         text-align: center;
     }
 
+    .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .image img {
+        width: 460px;
+        margin-top: 60px;
+    }
+
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .header {
-        font-size: 35px;
+        font-size: 65px;
+        line-height: 150%;
     }
 
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .value {
-        font-size: 26px;
-        width: 320px;
+        font-size: 40px;
+        line-height: 150%;
+        width: 415px;
     }
 
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .details {
@@ -3181,7 +3192,8 @@ details[open] summary .round-button {
     }
 
     .stock-leaders .container .stock-leaders-top .stock-leaders-items .item .details p {
-        font-size: 30px;
+        font-size: 42px;
+        margin-bottom: 60px;
     }
 
     .stock-leaders .container .stock-leaders-bottom .bottom-container {
